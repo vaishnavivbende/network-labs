@@ -107,5 +107,3 @@ Shows connected ports up/up.
   - Disabling unused ports
   - MAC sticky learning
 ###
-3️⃣ Assign IP Addresses
-PC0:
