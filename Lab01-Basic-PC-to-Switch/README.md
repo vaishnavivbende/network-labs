@@ -9,6 +9,8 @@ To establish a simple wired network connection between two PCs using a Cisco swi
 - PC0 connected to Switch using Copper Straight-Through cable
 - PC1 connected to Switch using Copper Straight-Through cable
 
+![Topology](screenshots/topology.PNG)
+
 ---
 
 ## 🛠️ Device List
@@ -33,20 +35,30 @@ To establish a simple wired network connection between two PCs using a Cisco swi
 ### 3️⃣ Assign IP Addresses
 PC0:
 
-IP Address: 192.168.1.10 Subnet Mask: 255.255.255.0
+IP Address: 192.168.1.10
+Subnet Mask: 255.255.255.0
+
+![PC0 IP Config](screenshots/PC0-ip.PNG)
 
 PC1:
 
-IP Address: 192.168.1.20 Subnet Mask: 255.255.255.0
+IP Address: 192.168.1.20
+Subnet Mask: 255.255.255.0
+
+![PC1 IP Config](screenshots/PC1-ip.PNG)
 
 ### 4️⃣ Verify Connectivity
 - From PC0 → Command Prompt:
 
 ping 192.168.1.20
 
+![PC0 Ping](screenshots/pc0-ping.PNG)
+
 - From PC1:
 
 ping 192.168.1.10
+
+![PC1 Ping](screenshots/pc1-ping.PNG)
 
 🟢 Successful ping = **network connectivity established**
 
@@ -58,6 +70,19 @@ Command:
 Switch> show mac address-table
 
 Switch learns MAC addresses dynamically as frames are forwarded.
+
+![MAC Table](screenshots/mac-table.PNG)
+
+---
+
+## 📋 Switch Interface Status
+Command:
+
+Switch> show ip interface brief
+
+Shows connected ports up/up.
+
+![IP Interface](screenshots/ip-interface.PNG)
 
 ---
 
