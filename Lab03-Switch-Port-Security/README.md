@@ -155,3 +155,29 @@ interface FastEthernet0/1
 
 ---
 
+## Commands to verify:
+
+1. show port security
+
+![Port Security](screenshots/portsec.PNG)
+
+2. show port security interface FastEthernet0/1
+
+![Port Security interface](screenshots/portsecint.PNG)
+
+3. show port security address
+
+![Port Security interface](screenshots/portsecadd.PNG) 
+
+4. show mac address-table
+
+![mac add table](screenshots/mac.PNG) 
+
+5. show interface status
+
+![interface](screenshots/int.PNG)
+
+6. show running-config | section interface FastEthernet0/1
+
+![section int](screenshots/config.PNG) 
+
