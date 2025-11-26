@@ -179,5 +179,17 @@ interface FastEthernet0/1
 
 6. show running-config | section interface FastEthernet0/1
 
-![section int](screenshots/config.PNG) 
+![section int](screenshots/section.PNG) 
+
+---
+
+## 📦 Files Included
+- `lab03.pkt`
+- `README.md`
+- `screenshots/`
+
+---
+
+Lab02 **completed successfully**.
+
 
