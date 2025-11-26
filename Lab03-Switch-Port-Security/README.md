@@ -190,6 +190,14 @@ interface FastEthernet0/1
 
 ---
 
-Lab02 **completed successfully**.
+## ✅ What Was Achieved:
+Securely configured switch interface using MAC-based port security.
+- Baseline switch configuration applied (hostname, secrets, VLAN1 IP).
+- Port security enabled on access ports with sticky MAC learning.
+- Violation mode tested (restrict) by simulating an attacker device.
+- Recovery options verified (shutdown/no shutdown, clearing sticky/dynamic MACs).
+- Verification commands and screenshots captured for documentation.
 
+---
 
+Lab03 **completed successfully**
