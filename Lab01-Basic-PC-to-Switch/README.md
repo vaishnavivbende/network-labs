@@ -1,11 +1,11 @@
 # Lab 01 — Basic PC to Switch Connectivity
 
-## 🎯 Objective
+## Objective
 To establish a simple wired network connection between two PCs using a Cisco switch, and verify connectivity using `ping`.
 
 ---
 
-## 🧩 Topology
+## Topology
 - PC0 connected to Switch using Copper Straight-Through cable
 - PC1 connected to Switch using Copper Straight-Through cable
 
@@ -13,7 +13,7 @@ To establish a simple wired network connection between two PCs using a Cisco swi
 
 ---
 
-## 🛠️ Device List
+## Device List
 | Device | Model | Count |
 |--------|--------|-------|
 | PC     | Generic | 2 |
@@ -22,17 +22,17 @@ To establish a simple wired network connection between two PCs using a Cisco swi
 
 ---
 
-## ⚙️ Configuration Steps
+## Configuration Steps
 
-### 1️⃣ Place Devices
+### Place Devices
 - Add **2 PCs** and **1 Switch (2960)** to the workspace
 
-### 2️⃣ Cabling
+### Cabling
 - Use **Copper Straight-Through** cable to connect:
   - PC0 → Switch (FastEthernet0/1)
   - PC1 → Switch (FastEthernet0/2)
 
-### 3️⃣ Assign IP Addresses
+### Assign IP Addresses
 PC0:
 
 IP Address: 192.168.1.10
@@ -47,7 +47,7 @@ Subnet Mask: 255.255.255.0
 
 ![PC1 IP Config](screenshots/PC1-ip.PNG)
 
-### 4️⃣ Verify Connectivity
+### Verify Connectivity
 - From PC0 → Command Prompt:
 
 ping 192.168.1.20
@@ -60,11 +60,11 @@ ping 192.168.1.10
 
 ![PC1 Ping](screenshots/pc1-ping.PNG)
 
-🟢 Successful ping = **network connectivity established**
+Successful ping = **network connectivity established**
 
 ---
 
-## 📋 Switch MAC Address Table
+## Switch MAC Address Table
 Command:
 
 Switch> show mac address-table
@@ -75,7 +75,7 @@ Switch learns MAC addresses dynamically as frames are forwarded.
 
 ---
 
-## 📋 Switch Interface Status
+## Switch Interface Status
 Command:
 
 Switch> show ip interface brief
@@ -86,24 +86,18 @@ Shows connected ports up/up.
 
 ---
 
-## 🎯 Outcome
+## Outcome
 - PCs can communicate through the switch
 - MAC learning verified
 - Basic LAN setup completed successfully
 
 ---
 
-## 📁 Files Included
-| File | Description |
-|------|-------------|
-| lab01.pkt | Packet Tracer project file |
-| screenshots/ | Ping results + MAC table |
+## Files Included
+- `lab01.pkt`
+- `README.md`
+- `screenshots/`
 
 ---
 
-## 🚀 Next Lab (Day 2 Preview)
-- Switch security configurations:
-  - Port security
-  - Disabling unused ports
-  - MAC sticky learning
-###
+Lab04 **completed successfully**
