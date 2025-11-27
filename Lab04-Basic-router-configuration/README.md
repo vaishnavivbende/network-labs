@@ -1,6 +1,6 @@
 # Lab04 – Basic Router Configuration (Router → Switch → PC)
 
-## 🎯 Objective
+## Objective
 Set up a basic router–switch–PC topology with IP addressing, baseline configs, and verification.  
 You will configure:
 - Router interface as gateway
@@ -130,14 +130,14 @@ ping switch: ping 192.168.10.2
 
 ---
 
-## 📦 Files Included
+## Files Included
 - `lab04.pkt`
 - `README.md`
 - `screenshots/`
 
 ---
 
-## ✅ What Was Achieved
+## What Was Achieved
 - Router baseline configured with hostname, passwords, banner, and gateway IP.  
 - Switch baseline configured with VLAN1 IP and default gateway.  
 - PC configured with IP, subnet mask, and gateway.  
