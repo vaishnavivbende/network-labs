@@ -1,6 +1,6 @@
 # Lab03 – Switch Port Security (MAC-Based Protection)
 
-## 🎯 Objective
+## Objective
 Implement basic port security on a Cisco switch to restrict access based on MAC addresses.  
 You will configure:
 - Static or sticky MAC learning
@@ -10,14 +10,14 @@ You will configure:
 
 ---
 
-## 🖥️ Topology Used
+## Topology Used
 ```
 PC0 --- Switch(SW-3) --- PC1
 PC2(connected to switch later, used for testing)
 ```
 ---
 
-## 🔧 Step 1: Configure PC IP Settings
+## Step 1: Configure PC IP Settings
 **PC0**
 - IP Address: `192.168.10.10`
 - Subnet Mask: `255.255.255.0`
@@ -35,7 +35,7 @@ PC2(connected to switch later, used for testing)
 
 ---
 
-## 🔧 Step 2: Basic Switch Configuration
+## Step 2: Basic Switch Configuration
 ```
 enable
 configure terminal
@@ -55,7 +55,7 @@ write memory
 ```
 ---
 
-## 🔧 Step 3: Access ports + port security (sticky)
+## Step 3: Access ports + port security (sticky)
 ```
 configure terminal
 
@@ -87,7 +87,7 @@ write memory
 ```
 ---
 
-## 🔧 Step 4: Verification Commands
+## Step 4: Verification Commands
 
 Run these after connecting PC0 & PC1 and pinging from PCs:
 ```
@@ -109,7 +109,7 @@ running-config contains switchport port-security mac-address sticky aaaa.bbbb.cc
 
 ---
 
-## 🔧 Step 5: Violation test (simulate an attacker)
+## Step 5: Violation test (simulate an attacker)
 
 1. Disconnect PC0 from Fa0/1.
 
@@ -125,7 +125,7 @@ Expected: Security Violation Count: 1 and newcomer MAC traffic dropped (restrict
 
 ---
 
-### ! If interface is err-disabled (shutdown mode), recover:
+### If interface is err-disabled (shutdown mode), recover:
 ```
 interface FastEthernet0/1
  shutdown
@@ -183,14 +183,14 @@ interface FastEthernet0/1
 
 ---
 
-## 📦 Files Included
+## Files Included
 - `lab03.pkt`
 - `README.md`
 - `screenshots/`
 
 ---
 
-## ✅ What Was Achieved:
+## What Was Achieved:
 Securely configured switch interface using MAC-based port security.
 - Baseline switch configuration applied (hostname, secrets, VLAN1 IP).
 - Port security enabled on access ports with sticky MAC learning.
