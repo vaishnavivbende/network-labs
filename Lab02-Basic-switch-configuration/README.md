@@ -1,12 +1,12 @@
 # Lab02 – Basic Switch Configuration (Cisco Packet Tracer)
 
-## 🎯 Objective
+## Objective
 Configure a Cisco switch with basic security hardening and management access.  
 This includes hostname, console password, enable secret, banner, and SVI interface.
 
 ---
 
-## 🧩 Topology
+## Topology
 
 [PC] ---- [SW-02]
 
@@ -14,9 +14,9 @@ Single PC connected to FastEthernet0/1 on the switch.
 
 ---
 
-## 🛠️ Step-By-Step Configuration
+## Step-By-Step Configuration
 
-### 1️⃣ Configure Hostname
+### Configure Hostname
 
 enable
 configure terminal
@@ -24,7 +24,7 @@ hostname SW-02
 
 ---
 
-### 2️⃣ Secure Console Access
+### Secure Console Access
 
 line console 0
 password cisco123
@@ -33,19 +33,19 @@ exit
 
 ---
 
-### 3️⃣ Set Enable Secret password
+### Set Enable Secret password
 
 enable secret admin123
 
 ---
 
-### 4️⃣ Add Security Banner (MOTD)
+### Add Security Banner (MOTD)
 
 banner motd #Unauthorized access is prohibited#
 
 ---
 
-### 5️⃣ Configure Management Interface (VLAN 1)
+### Configure Management Interface (VLAN 1)
 
 interface vlan 1
 ip address 192.168.1.1 255.255.255.0
@@ -54,39 +54,39 @@ exit
 
 ---
 
-### 6️⃣ Save Configuration
+### Save Configuration
 
 copy running-config startup-config
 
 ---
 
-## 🧪 Verification Commands
+## Verification Commands
 
-### ✔ Show running configuration
+### Show running configuration
 
 show running-config
 
 ![Running Config](screenshots/config.PNG)
 
-### ✔ Check VLANs
+### Check VLANs
 
 show vlan brief
 
 ![VLAN Brief](screenshots/vlan.PNG)
 
-### ✔ Check Interface Status
+### Check Interface Status
 
 show interfaces status
 
 ![Interface Status](screenshots/int-status.PNG)
 
-### ✔ Check SVI
+### Check SVI
 
 show ip interface brief
 
 ![IP Interface Brief](screenshots/ip-int.PNG)
 
-### ✔ Ping Test (PC → Switch)
+### Ping Test (PC → Switch)
 From the PC:
 
 ping 192.168.1.1
@@ -97,20 +97,20 @@ Result: 100% success.
 
 ---
 
-## 📦 Files Included
+## Files Included
 - `lab02.pkt`
 - `README.md`
 - `screenshots/`
 
 ---
 
-## 🏁 Result
+## Result
 Switch successfully configured for:
 - Local access security  
 - Management IP  
 - Operational VLAN interface  
 - Verified connectivity  
 
-Lab02 **completed successfully**.
-
 ---
+
+Lab02 **completed successfully**.
