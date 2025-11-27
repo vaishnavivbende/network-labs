@@ -84,13 +84,14 @@ write memory
 
 ## 🔧 Step 3: Verification
 
-###ROUTER:
+### ROUTER:
+
 ```
 show ip interface brief
 ```
 ![ip](screenshots/rr.PNG)
 
-###Router->PC
+Router->PC
 ```
 ping pc: ping 192.168.10.10
 ```
@@ -98,13 +99,14 @@ ping pc: ping 192.168.10.10
 
 ---
 
-###SWITCH:
+### SWITCH:
+
 ```
 show interface status
 ```
 ![int](screenshots/swint.PNG)
 
-###Switch->Router:
+Switch->Router:
 ```
 ping router: ping 192.168.10.1
 ```
@@ -112,14 +114,15 @@ ping router: ping 192.168.10.1
 
 ---
 
-###PC:
-###PC->router:
+### PC:
+
+PC->router:
 ```
 ping router: ping 192.168.10.1
 ```
 ![ping](screenshots/prt.PNG)
 
-###PC->switch:
+PC->switch:
 ```
 ping switch: ping 192.168.10.2
 ```
@@ -134,7 +137,7 @@ ping switch: ping 192.168.10.2
 
 ---
 
-##✅ What Was Achieved
+## ✅ What Was Achieved
 - Router baseline configured with hostname, passwords, banner, and gateway IP.  
 - Switch baseline configured with VLAN1 IP and default gateway.  
 - PC configured with IP, subnet mask, and gateway.  
