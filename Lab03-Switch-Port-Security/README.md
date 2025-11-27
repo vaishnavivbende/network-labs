@@ -190,7 +190,7 @@ interface FastEthernet0/1
 
 ---
 
-## What Was Achieved:
+## Output:
 Securely configured switch interface using MAC-based port security.
 - Baseline switch configuration applied (hostname, secrets, VLAN1 IP).
 - Port security enabled on access ports with sticky MAC learning.
