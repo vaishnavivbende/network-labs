@@ -15,7 +15,7 @@ You will configure:
 
 PC --- Switch ---Router
 
-![top](screenshots/top)
+![top](screenshots/top.PNG)
 
 ---
 
@@ -88,13 +88,13 @@ write memory
 ```
 show ip interface brief
 ```
-![ip](screenshots/rr)
+![ip](screenshots/rr.PNG)
 
 ###Router->PC
 ```
 ping pc: ping 192.168.10.10
 ```
-![ip](screenshots/rtpc)
+![ip](screenshots/rtpc.PNG)
 
 ---
 
@@ -102,13 +102,13 @@ ping pc: ping 192.168.10.10
 ```
 show interface status
 ```
-![int](screenshots/swint)
+![int](screenshots/swint.PNG)
 
 ###Switch->Router:
 ```
 ping router: ping 192.168.10.1
 ```
-![int](screenshots/swrt)
+![int](screenshots/swrt.PNG)
 
 ---
 
@@ -117,13 +117,13 @@ ping router: ping 192.168.10.1
 ```
 ping router: ping 192.168.10.1
 ```
-![ping](screenshots/prt)
+![ping](screenshots/prt.PNG)
 
 ###PC->switch:
 ```
 ping switch: ping 192.168.10.2
 ```
-![ping](screenshots/psw)
+![ping](screenshots/psw.PNG)
 
 ---
 
