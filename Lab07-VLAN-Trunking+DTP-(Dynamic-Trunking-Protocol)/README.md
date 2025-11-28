@@ -25,9 +25,11 @@ You will learn to:
 ## Step 1: PC IP Configuration
 
 PC0:
+
 ![config](screenshots/p0c.PNG)
 
 PC1:
+
 ![config](screenshots/p1c.PNG)
 
 ---
@@ -91,7 +93,7 @@ Desirable + Auto = trunk successfully negotiated using DTP.
 
 ---
 
-Step 5: Verification Commands
+## Step 5: Verification Commands
 On both switches:
 ```
 show interfaces trunk
