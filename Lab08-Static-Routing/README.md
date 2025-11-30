@@ -57,7 +57,7 @@ end
 write memory
 ```
 
-**SW1**
+**SW2**
 ```
 enable
 configure terminal
@@ -144,6 +144,7 @@ show ip route
 ![route](screenshots/r2show.PNG)
 
 On PCs:
+
 PC1:
 ```
 ping 192.168.20.10
@@ -162,7 +163,7 @@ Successful pings confirm static routing is working.
 
 ---
 
-Outcome
+## Outcome
 - LAN A and LAN B configured with distinct subnets  
 - WAN link established between R1 and R2  
 - Static routes added so each router knows about the remote LAN  
