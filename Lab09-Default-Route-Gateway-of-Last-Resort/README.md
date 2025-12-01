@@ -34,10 +34,12 @@ PC1 --- R1 --- R2 --- PC2
 ## PC Configuration
 
 ### PC1
-![PC1 Configuration](screenshots/p0c.png)
+
+![PC1 Configuration](screenshots/p0c.PNG)
 
 ### PC2
-![PC2 Configuration](screenshots/p1c.png)
+
+![PC2 Configuration](screenshots/p1c.PNG)
 
 ---
 
@@ -109,12 +111,14 @@ ip route 192.168.1.0 255.255.255.0 10.0.0.1
 ```
 show ip interface brief
 ```
-![R1 Interface Status](screenshots/r1b.png)
+
+![R1 Interface Status](screenshots/r1b.PNG)
 
 ```
 show ip route
 ```
-![R1 Routing Table](screenshots/r1r.png)
+
+![R1 Routing Table](screenshots/r1r.PNG)
 
 **Expected output - Gateway of Last Resort:**
 ```
@@ -129,12 +133,14 @@ C    192.168.1.0/24 is directly connected, GigabitEthernet0/0
 ```
 show ip interface brief
 ```
-![R2 Interface Status](screenshots/r2b.png)
+
+![R2 Interface Status](screenshots/r2b.PNG)
 
 ```
 show ip route
 ```
-![R2 Routing Table](screenshots/r2r.png)
+
+![R2 Routing Table](screenshots/r2r.PNG)
 
 ### Ping Tests
 
@@ -142,13 +148,15 @@ show ip route
 ```
 ping 200.100.50.10
 ```
-![PC1 Ping Success](screenshots/p0p.png)
+
+![PC1 Ping Success](screenshots/p0p.PNG)
 
 **From PC1 to R2(Internet side):**
 ```
 ping 200.100.50.1
 ```
-![Ping Verification](screenshots/p0g.png)
+
+![Ping Verification](screenshots/p0g.PNG)
 
 ---
 
