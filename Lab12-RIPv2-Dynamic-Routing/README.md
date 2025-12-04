@@ -204,7 +204,7 @@ R2#show ip route
 R2#show ip protocols
 ```
 
-![R2 IP Protocols](screenshots/r2P.PNG)
+![R2 IP Protocols](screenshots/r2p.PNG)
 
 ### On R3
 
