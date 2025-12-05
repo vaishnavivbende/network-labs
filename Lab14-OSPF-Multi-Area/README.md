@@ -248,7 +248,7 @@ R2#show ip route ospf
 R3#show ip ospf
 ```
 
-![R3 OSPF Status](screenshots/r3O.PNG)
+![R3 OSPF Status](screenshots/r3o.PNG)
 
 **Check OSPF neighbors:**
 ```
@@ -292,7 +292,7 @@ R1#traceroute 192.168.2.1
 
 ![R1 Traceroute](screenshots/t.PNG)
 
-**Expected path: R1 → R2 → R3 → R4**
+**Path: R1 → R2 → R3 → R4**
 
 ---
 
