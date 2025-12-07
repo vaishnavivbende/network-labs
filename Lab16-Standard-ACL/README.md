@@ -93,12 +93,12 @@ Router(config)#no ip domain-lookup
 
 ### Step 2: Configure Interfaces
 ```
-R1(config)#interface gigabitEthernet 0/0
+R1(config)#interface gigabitEthernet0/0
 R1(config-if)#ip address 192.168.1.1 255.255.255.0
 R1(config-if)#no shutdown
 R1(config-if)#exit
 
-R1(config)#interface gigabitEthernet 0/1
+R1(config)#interface gigabitEthernet0/1
 R1(config-if)#ip address 10.0.0.1 255.255.255.252
 R1(config-if)#no shutdown
 R1(config-if)#exit
@@ -122,7 +122,7 @@ R1(config)#access-list 1 deny any
 
 ### Step 5: Apply ACL to Interface
 ```
-R1(config)#interface gigabitEthernet 0/1
+R1(config)#interface gigabitEthernet0/1
 R1(config-if)#ip access-group 1 out
 R1(config-if)#exit
 ```
@@ -143,12 +143,12 @@ Router(config)#no ip domain-lookup
 
 ### Step 2: Configure Interfaces
 ```
-R2(config)#interface gigabitEthernet 0/0
+R2(config)#interface gigabitEthernet0/0
 R2(config-if)#ip address 10.0.0.2 255.255.255.252
 R2(config-if)#no shutdown
 R2(config-if)#exit
 
-R2(config)#interface gigabitEthernet 0/1
+R2(config)#interface gigabitEthernet0/1
 R2(config-if)#ip address 192.168.3.1 255.255.255.0
 R2(config-if)#no shutdown
 R2(config-if)#exit
