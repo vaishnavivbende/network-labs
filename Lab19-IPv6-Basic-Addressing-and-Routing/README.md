@@ -195,7 +195,7 @@ ping 2001:DB8:2::10
 ```
 (Ping PC2)
 
-![PC1 IPv6 Ping Tests](screenshots/pc1p.PNG)
+![PC1 IPv6 Ping Tests](screenshots/p1.PNG)
 
 **From PC2:**
 ```
@@ -208,7 +208,7 @@ ping 2001:DB8:1::10
 ```
 (Ping PC1)
 
-![PC2 IPv6 Ping Tests](screenshots/p2p.PNG)
+![PC2 IPv6 Ping Tests](screenshots/p2.PNG)
 
 ---
 
