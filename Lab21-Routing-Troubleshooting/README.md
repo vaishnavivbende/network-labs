@@ -27,7 +27,7 @@ PC2 ---- Switch --- R1 --- R2 --- R3 --- Server
 PC3 ---/
 ```
 
-![Topology](screenshots/topology.PNG)
+![Topology](screenshots/top.PNG)
 
 ---
 
@@ -161,8 +161,8 @@ Router(config-if)#ip address 192.168.3.1 255.255.255.0
 Router(config-if)#no shutdown
 Router(config-if)#exit
 
-Router(config)#ip route 192.168.1.0 255.255.0.0 10.0.0.5
-(WRONG - subnet mask should be 255.255.255.0, not 255.255.0.0)
+Router(config)#ip route 192.168.1.0 255.255.255.252 10.0.0.5
+(WRONG - subnet mask should be 255.255.255.0, not 255.255.255.252)
 ```
 
 ---
@@ -232,7 +232,7 @@ Look for:
 ```
 R2#show ip route
 ```
-![R2 Routing Table Before Fix](screenshots/r2rb-fix.PNG)
+![R2 Routing Table Before Fix](screenshots/r2rb.PNG)
 
 **On R3:**
 ```
