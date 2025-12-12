@@ -11,7 +11,7 @@ You will configure:
 
 ---
 
-## 🖥️ Topology Used
+## Topology Used
 
 PC --- Switch ---Router
 
