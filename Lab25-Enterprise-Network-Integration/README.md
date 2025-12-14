@@ -75,7 +75,8 @@ WAN Link: R1 ↔ R3 (OSPF Area 0)
           R2 ↔ R3 (OSPF Area 0)
 ```
 
-![Topology](screenshots/topology.PNG)
+
+![Topology](screenshots/top.PNG)
 
 ---
 
@@ -799,7 +800,7 @@ R1: check access-lists for increase in matches to confirm that it's working.
 ```
 ping 8.8.8.8
 ```
-![PC4 Internet Ping](screenshots/pc4internet.PNG)
+![PC4 Internet Ping](screenshots/p4internet.PNG)
 
 Should work (traffic routes through HQ, then NAT).
 
@@ -872,7 +873,7 @@ R2 should now show Active state for all VLANs.
 ping -t 10.10.10.1 
 ```
 
-![PC1 ping during failover](screenshots/pc1during)
+![PC1 ping during failover](screenshots/pc1during.PNG)
 
 Should see brief interruption (1-2 packets lost), then resume successfully.
 
